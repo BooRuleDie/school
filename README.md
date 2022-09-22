@@ -1,2 +1,2 @@
 # Description
-Projects and homeworks that I've done for school.
+Projects and homework that I've done and notes that I've taken for school.
