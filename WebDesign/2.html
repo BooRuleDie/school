@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            /* background image */
+            /* background-image: url("https://picsum.photos/id/237/200/200"); */
+            /* background-repeat: repeat-x, repeat-y, no-repeat; */
+            /* background-size: cover;
+            background-size: contain;
+            background-attachment: fixed; */
+        }
+        div.center img{
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bg-red{
+            background-color: red;
+        }
+
+        .bg-blue{
+            background-color: blue;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center" style="background-color: green;">
+        <a href="https://en.wikipedia.org/wiki/Dog" target="_blank">
+            <img src="https://picsum.photos/id/237/200/200" alt="Dog image">
+        </a>
+    </div>
+
+    <div style="padding-left: 50%;">
+        <a href="#bookmark">Click me!</a>
+    </div>
+
+    <div class="bg-red" style="padding:50px">
+        <h1 id="change"c>I'm going to change</h1>
+        <button onclick="firstFunction()">Click Me!</button>
+
+        <script>
+            var flag = false;
+            function firstFunction(){
+                
+                if (flag){
+                    document.getElementById("change").innerHTML = "I'm going to change";
+                    flag = false;
+                }else{
+                    document.getElementById("change").innerHTML = "I'M CHANGED!!!";
+                flag = true;
+                }         
+            }   
+        </script>
+    </div>
+
+    <div class="bg-blue">
+        <a href="" title="You can do this on images too >:)" style="color:black">I'm going to show you some interesting things when you hover your mouse over me.</a>
+    </div>
+
+    <div id="bookmark" style="background-color: purple;">
+        <!-- we must use IDs to create bookmarks, classes don't work here -->
+        <p style="text-align: center;margin: 0px;">
+            whazaaapp
+        </p>
+    </div>
+
+    <div>
+        <!-- Importance of float -->
+        <img src="https://picsum.photos/id/237/200/200" alt="Same photo again" style="float:left;margin: 0 10px 0 10px;">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis cupiditate. Ratione accusamus beatae reiciendis maxime dolorum quas sed architecto assumenda? Enim non accusamus quidem esse qui pariatur quasi. Modi esse omnis totam blanditiis ipsa ducimus deleniti a eius mollitia corporis, est eligendi iusto nam laboriosam aliquam animi tempore, facere, eos distinctio aspernatur alias debitis itaque consequuntur facilis! Accusantium, perferendis incidunt? Voluptas magni, perspiciatis beatae recusandae illum assumenda nulla ducimus optio asperiores impedit repellat voluptates cupiditate, voluptatem quam culpa dolores minus, quaerat tempora obcaecati repellendus quae placeat. Incidunt ullam possimus architecto repudiandae officiis, odio, excepturi iure, voluptate ducimus earum quo?</p>
+    </div>
+</body>
+</html>
