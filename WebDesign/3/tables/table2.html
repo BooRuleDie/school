@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table, th, td {
+            border-collapse: collapse;
+            border: 3px solid blue;
+            /* border-spacing: 10px; */
+        }
+        
+        tr:nth-child(odd){
+            background-color: red;
+        }
+        tr:nth-child(even){
+            background-color: green;
+        }
+        tr:hover:nth-child(odd){
+            background-color: purple;
+        }
+        tr:hover:nth-child(even){
+            background-color: pink;
+        }
+        /* You can do the same thing for td and th elements */
+
+        table#first a:link {
+           /* Unvisited */
+            color: green; 
+            text-decoration: none;
+        }
+        table#first a:visited {
+           /* Visited */
+            color: magenta; 
+        }
+        table#first a:hover{
+           /* Hover */
+            color: orange;
+            text-decoration: underline;
+        }
+        table#first a:active{
+           /* Clicked */
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <table id="first">
+        <tr>
+            <!-- Table Header -->
+            <th>col 1</th>
+            <th><a href="https://example.com" target="_blank">col 2</a></th>
+            <th>col 3</th>
+        </tr>
+        <tr>
+            <!-- Table Data -->
+            <td>Lorem, ipsum dolor.</td>
+            <td>Voluptate, doloremque minus?</td>
+            <td>Est, cum ut?</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Voluptate, doloremque minus?</td>
+            <td>Est, cum ut?</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Voluptate, doloremque minus?</td>
+            <td>Est, cum ut?</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Voluptate, doloremque minus?</td>
+            <td>Est, cum ut?</td>
+        </tr>
+
+    </table>
+
+    <p><a href="https://example.com" target="_blank">heyo</a></p>
+
+</body>
+</html>
