@@ -134,21 +134,69 @@
         }
         /* END of Heading */
         /* START of page-content */
-        
+        .page-content div {
+            margin-top: 40px;
+            height: 200px;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(57, 62, 70);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .page-content p {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 20px;
+            color:whitesmoke;
+        }
+
+        .page-content img.one, img.three {
+            float: right;
+            width: 250px;
+            border-radius: 10px;
+            margin-right:10px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .page-content img.two {
+            float: left;
+            width: 250px;
+            border-radius: 10px;
+            margin-right:20px;
+            margin-left: 10px;
+        }
+
+        .page-content h1 {
+            color:#00ADB5;
+            margin-left: 10%;
+            font-size: 25px;
+        }
+        /* END of page-content  */
+        /* START of footer */
+        .footer {
+            background-color: rgb(238, 238, 238);
+            text-align: center;
+            padding: 20px;
+        }
+        /* END of footer */
     </style>
 </head>
 <body>
+    <!-- START of navbar -->
     <div class="navbar">
         <div class="container">
-            <div class="navbar-element">
+            <div class="navbar-element" onclick="redirect('/index.html')">
                 <img src="./img/home.png" alt="home">
                 <p>Home</p>
             </div>
-            <div class="navbar-element">
+            <div class="navbar-element" onclick="redirect('/about-us.html')">
                 <img src="./img/about-us.png" alt="home">
                 <p>About us</p>
             </div>
-            <div class="navbar-element languages" id="languages">
+            <div class="navbar-element languages" id="languages" onclick="redirect('/languages.html')">
                 <img src="./img/languages.png" alt="home">
                 <p>Languages</p>
                 <ul id="unordered-list">
@@ -160,36 +208,54 @@
                     <li><a href="ruby.html">Ruby</a></li>
                 </ul>
             </div>
-            <div class="navbar-element">
+            <div class="navbar-element" onclick="redirect('/contact.html')">
                 <img src="./img/contact.png" alt="home">
                 <p>Contact</p>
             </div>
-            <div class="navbar-element">
+            <div class="navbar-element" onclick="redirect('/youtube.html')">
                 <img src="./img/youtube.png" alt="home">
                 <p>YouTube</p>
             </div>
-            <div class="navbar-element">
+            <div class="navbar-element" onclick="redirect('/coffee.html')">
                 <img src="./img/coffee.png" alt="home">
                 <p>Buy Me a Coffee</p>
             </div>
-            <div class="navbar-element">
+            <div class="navbar-element" onclick="redirect('/tutorials.html')">
                 <img src="./img/tutorials.png" alt="home">
                 <p>Tutorials</p>
             </div>
         </div>
     </div>
-
+    <!-- END of navbar -->
+    <!-- START of top-header -->
     <div class="top-header">
         <h1>Welcome to <span id="pro">Pro</span><span class="italic-fade">(gramming)</span><span id="lang">Lang</span><span class="italic-fade">(uages)</span></h1>
     </div>
-
+    <!-- END of top-header -->
+    <!-- START of page-content -->
     <div class="page-content">
-
+        <div>
+            <img src="./img/programmingLanguages.png" alt="programming Languages" class="one">
+            <h1>What are Programming Languages ?</h1>
+            <p>A computer is a digital machine. It can only understand electric signals either ON or OFF or 1 or 0. But how do we communicate with this digital machine? Just like there are multiple languages we communicate with each other. <br><br>But computers cannot understand our languages. We can interact with the computer through multiple languages like machine language, assembly language, C, C++, Java, etc.</p>
+        </div>
+        <div>
+            <img src="./img/assambly.png" alt="vscode assambly" class="two">
+            <h1>Generations of Programming Languages</h1>
+            <p>First generation languages are low-level languages like machine language. Second Generation Languages are low-level assembly languages used in kernels and hardware drives. <br><br>Third Generation Languages are high-level languages like C, C++, Java, Visual Basic, and JavaScript. Fourth Generation Languages are languages that consist of statements that are similar to statements in the human language.</p>
+        </div>
+        <div style="margin-bottom: 25px;">
+            <img src="./img/cvspython.png" alt="C vs Python" class="three">
+            <h1>Compile & Interpreter ?</h1>
+            <p>Basically, all scripting languages are programming languages. The theoretical difference between the two is that scripting languages do not require the compilation step and are rather interpreted. <br><br>For example, normally, a C program needs to be compiled before running whereas normally, a scripting language like JavaScript or PHP need not be compiled.</p>
+        </div>
     </div>
-
+    <!-- END of page-content -->
+    <!-- START of footer -->
     <div class="footer">
-
+        <p>Copyright © ProLang</p>
     </div>
+    <!-- END of footer -->
 
     <script>
         const pro = document.getElementById("pro");
@@ -223,6 +289,11 @@
             italicFades[0].style.cssText = "width: 0px; transition: 1s;"
             italicFades[1].style.cssText = "width: 0px; transition: 1s;"
         }); 
+        }
+
+        /* navbar icon redirect */
+        const redirect = (url) => {
+            window.location.href = url;
         }
     </script>
 </body>
