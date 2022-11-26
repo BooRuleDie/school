@@ -18,14 +18,15 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(34, 40, 49);
         }
-
+        
+        /* START of navbar */
         .navbar {
             background-color: #00ADB5;
             height: 68px;
             width: 100%;
-            position: fixed;
             font-weight: bold;
             font-size: 10px;
             padding-left: 10px;
@@ -89,17 +90,51 @@
         }
         a:link {
            /* Unvisited */
-           color:rgb(57, 62, 70);
+           color: rgb(34, 40, 49)
         }
         a:visited {
            /* Visited */
-           color:rgb(57, 62, 70);
+           color: rgb(34, 40, 49)
         }
         a:hover{
            /* Hover */
            color:#00ADB5;
         }
 
+        /* END of navbar */
+        /* START of top-header */
+        .top-header {
+            height: 50px;
+            background-color: #393E46;
+            padding: 30px;
+        }
+
+        .top-header h1 {
+           text-align: center;
+           color: #EEEEEE;
+        }
+        
+        .italic-fade {
+            color: rgb(87, 87, 87);
+            font-size: 16px;
+            font-style: italic;
+            display: inline-block;
+            width: 0px;
+            overflow: hidden;
+        }
+
+        #pro {
+            color: rgb(51, 112, 162);
+            text-shadow: 0px 0px 16px rgba(51,112,162,0.7);
+        }
+
+        #lang {
+            color: rgb(246, 210, 73);
+            text-shadow: 0px 0px 16px rgba(246,210,73,0.6);
+        }
+        /* END of Heading */
+        /* START of page-content */
+        
     </style>
 </head>
 <body>
@@ -145,7 +180,7 @@
     </div>
 
     <div class="top-header">
-
+        <h1>Welcome to <span id="pro">Pro</span><span class="italic-fade">(gramming)</span><span id="lang">Lang</span><span class="italic-fade">(uages)</span></h1>
     </div>
 
     <div class="page-content">
@@ -155,5 +190,40 @@
     <div class="footer">
 
     </div>
+
+    <script>
+        const pro = document.getElementById("pro");
+        const lang = document.getElementById("lang");
+
+        const italicFades = document.getElementsByClassName("italic-fade");
+        
+        pro.addEventListener("mouseover", () => {
+            italicFades[0].style.cssText = "width: 95px; transition: 1s;"
+            italicFades[1].style.cssText = "width: 60px; transition: 1s;"
+        });
+        lang.addEventListener("mouseover", () => {
+            italicFades[0].style.cssText = "width: 95px; transition: 1s;"
+            italicFades[1].style.cssText = "width: 60px; transition: 1s;"
+        });
+        pro.addEventListener("mouseout", () => {
+            italicFades[0].style.cssText = "width: 0px; transition: 1s;"
+            italicFades[1].style.cssText = "width: 0px; transition: 1s;"
+        });
+        lang.addEventListener("mouseout", () => {
+            italicFades[0].style.cssText = "width: 0px; transition: 1s;"
+            italicFades[1].style.cssText = "width: 0px; transition: 1s;"
+        });
+        
+        for (let i = 0; i < italicFades.length; i++){
+            italicFades[i].addEventListener("mouseover", () => {
+            italicFades[0].style.cssText = "width: 95px; transition: 1s;"
+            italicFades[1].style.cssText = "width: 60px; transition: 1s;"
+        });
+            italicFades[i].addEventListener("mouseout", () => {
+            italicFades[0].style.cssText = "width: 0px; transition: 1s;"
+            italicFades[1].style.cssText = "width: 0px; transition: 1s;"
+        }); 
+        }
+    </script>
 </body>
 </html>
