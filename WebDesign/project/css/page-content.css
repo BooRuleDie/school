@@ -1,0 +1,43 @@
+/* START of page-content */
+.page-content div {
+    margin-top: 40px;
+    height: 200px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(57, 62, 70);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.page-content p {
+    font-size: 17px;
+    font-weight: bold;
+    
+    margin-top: 20px;
+    color:rgba(245,245,245,0.65);
+}
+
+.page-content img.one, img.three {
+    float: right;
+    width: 250px;
+    border-radius: 10px;
+    margin-right:10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.page-content img.two {
+    float: left;
+    width: 250px;
+    border-radius: 10px;
+    margin-right:20px;
+    margin-left: 10px;
+}
+
+.page-content h1 {
+    color:#00ADB5;
+    margin-left: 10%;
+    font-size: 25px;
+}
+/* END of page-content  */

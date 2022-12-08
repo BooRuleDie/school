@@ -1,0 +1,25 @@
+.contact-content {
+    padding: 50px 25% 50px 25%;
+}
+
+.contact-content table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid #00ADB5;
+}
+
+.contact-content tr:nth-child(even) {
+    background-color: #393E46;
+}
+
+.contact-content th {
+    color: #00ADB5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-content td {
+    color: rgba(245,245,245,0.65);
+    padding: 10px 0;
+}

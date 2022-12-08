@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Most Awesome Website for Programming Language Enthusiacsts">
+    <meta name="keywords" content="Programming, Language, Programming Language, Python, Javascript, Java, Golang, Rust, C++, C, C#, Kotlin, Flutter, Ruby, PHP">
+    <meta name="author" content="Eren Burulday">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    
+    <!-- CSS START -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/top-header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- CSS END -->
+
+    <!-- JS START -->
+    <script src="./js/navbar-icon-redirect.js"></script>
+    <script src="./js/replica.js"></script>
+    <!-- JS END -->
+
+    <style>
+        .youtube-content p {
+            color: rgba(245,245,245,0.65);
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .video-row {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            background-color: #393e46;
+            border-radius: 5px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .youtube-content iframe {
+            padding-right: 40px;
+        }
+
+        .youtube-content iframe {
+            padding-right: 40px;
+            padding-left: 25px;
+        }
+
+    </style>
+
+    <title>ProLang | YouTube</title>
+</head>
+<body>
+    <!-- START of navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-element" onclick="redirect('/index.html')">
+                <img src="./img/home.png" alt="home">
+                <p>Home</p>
+            </div>
+            <div class="navbar-element" onclick="redirect('/about-us.html')">
+                <img src="./img/about-us.png" alt="home">
+                <p>About us</p>
+            </div>
+            <div class="navbar-element languages" id="languages" onclick="redirect('/languages.html')">
+                <img src="./img/languages.png" alt="home">
+                <p>Languages</p>
+                <ul id="unordered-list">
+                    <li><a href="python.html">Python</a></li>
+                    <li><a href="javascript.html">Javascript</a></li>
+                    <li><a href="golang.html">Golang</a></li>
+                    <li><a href="rust.html">Rust</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                    <li><a href="ruby.html">Ruby</a></li>
+                </ul>
+            </div>
+            <div class="navbar-element" onclick="redirect('/contact.html')">
+                <img src="./img/contact.png" alt="home">
+                <p>Contact</p>
+            </div>
+            <div class="navbar-element" onclick="redirect('/youtube.html')">
+                <img src="./img/youtube.png" alt="home">
+                <p>YouTube</p>
+            </div>
+            <div class="navbar-element" onclick="replica()">
+                <img src="./img/replica.png" alt="home">
+                <p>Replicas</p>
+            </div>
+            <div class="navbar-element" onclick="redirect('/tutorials.html')">
+                <img src="./img/tutorials.png" alt="home">
+                <p>Tutorials</p>
+            </div>
+        </div>
+    </div>
+    <!-- END of navbar -->
+    <!-- START of top-header -->
+    <div class="top-header">
+        <h1>YouTube</h1>
+    </div>
+    <!-- END of top-header -->
+    <!-- START of page-content -->
+    <div class="youtube-content">
+            <p>You can find our most popular videos that we share on YouTube.</p>
+
+            <div class="video-row">
+                <iframe width="250" src="https://www.youtube.com/embed/OdgxYFtIYEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" src="https://www.youtube.com/embed/9eMvxwk6Op4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" src="https://www.youtube.com/embed/BmAncjcPAmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-row">
+                <iframe width="250" src="https://www.youtube.com/embed/wmje4-UG8Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" src="https://www.youtube.com/embed/T_KrYLW4jw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" src="https://www.youtube.com/embed/ZdP0KM49IVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-row">
+                <iframe width="250" src="https://www.youtube.com/embed/ravLFzIguCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" src="https://www.youtube.com/embed/UYm0kfnRTJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" src="https://www.youtube.com/embed/jUuqBZwwkQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+    </div>
+    <!-- END of page-content -->
+    <!-- START of footer -->
+    <div class="footer">
+        <p>Copyright © ProLang</p>
+    </div>
+    <!-- END of footer -->
+</body>
+</html>

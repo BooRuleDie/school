@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Most Awesome Website for Programming Language Enthusiacsts">
+    <meta name="keywords" content="Programming, Language, Programming Language, Python, Javascript, Java, Golang, Rust, C++, C, C#, Kotlin, Flutter, Ruby, PHP">
+    <meta name="author" content="Eren Burulday">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    
+    <!-- CSS START -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/top-header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <!-- CSS END -->
+
+    <!-- JS START -->
+    <script src="./js/navbar-icon-redirect.js"></script>
+    <script src="./js/replica.js"></script>
+    <!-- JS END -->
+
+    <style>
+        
+        .google-maps {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .google-maps iframe{
+            width: 100%;
+            margin: 70px 0;
+        }
+    </style>
+
+    <title>ProLang | Contact</title>
+</head>
+<body>
+    <!-- START of navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-element" onclick="redirect('/index.html')">
+                <img src="./img/home.png" alt="home">
+                <p>Home</p>
+            </div>
+            <div class="navbar-element" onclick="redirect('/about-us.html')">
+                <img src="./img/about-us.png" alt="home">
+                <p>About us</p>
+            </div>
+            <div class="navbar-element languages" id="languages" onclick="redirect('/languages.html')">
+                <img src="./img/languages.png" alt="home">
+                <p>Languages</p>
+                <ul id="unordered-list">
+                    <li><a href="python.html">Python</a></li>
+                    <li><a href="javascript.html">Javascript</a></li>
+                    <li><a href="golang.html">Golang</a></li>
+                    <li><a href="rust.html">Rust</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                    <li><a href="ruby.html">Ruby</a></li>
+                </ul>
+            </div>
+            <div class="navbar-element" onclick="redirect('/contact.html')">
+                <img src="./img/contact.png" alt="home">
+                <p>Contact</p>
+            </div>
+            <div class="navbar-element" onclick="redirect('/youtube.html')">
+                <img src="./img/youtube.png" alt="home">
+                <p>YouTube</p>
+            </div>
+            <div class="navbar-element" onclick="replica()">
+                <img src="./img/replica.png" alt="home">
+                <p>Replicas</p>
+            </div>
+            <div class="navbar-element" onclick="redirect('/tutorials.html')">
+                <img src="./img/tutorials.png" alt="home">
+                <p>Tutorials</p>
+            </div>
+        </div>
+    </div>
+    <!-- END of navbar -->
+    <!-- START of top-header -->
+    <div class="top-header">
+        <h1>Contact Information</h1>
+    </div>
+    <!-- END of top-header -->
+    <!-- START of contact-content -->
+    <div class="contact-content">
+        <table>
+            <tr>
+                <th>Name & Surname</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>Can Polat</td>
+                <td>cpolat@prolang.com</td>
+                <td>+90123 456 78 90</td>
+            </tr>
+            <tr>
+                <td>Arda Kerem</td>
+                <td>akerem@prolang.com</td>
+                <td>+90123 456 78 91</td>
+            </tr>
+            <tr>
+                <td>Muhammed Keskin</td>
+                <td>mkeskin@prolang.com</td>
+                <td>+90123 456 78 92</td>
+            </tr>
+            <tr>
+                <td>Melisa Adıgüzel</td>
+                <td>madiguzel@prolang.com</td>
+                <td>+90123 456 78 93</td>
+            </tr>
+            <tr>
+                <td>Fatma Keleş</td>
+                <td>fkeles@prolang.com</td>
+                <td>+90123 456 78 94</td>
+            </tr>
+            <tr>
+                <td>Kemal Sarıdudak</td>
+                <td>ksaridudak@prolang.com</td>
+                <td>+90123 456 78 95</td>
+            </tr>
+        </table>
+    </div>
+    <!-- END of contact-content -->
+    <hr style="color:white; width: 80%; margin: 0 auto;">
+    <!-- START of form -->
+    <div class="form">
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+            <h2>Comment</h2>
+            <textarea name="comment" id="comment" rows="8" cols="75"></textarea>
+            <h2>Firstname</h2>
+            <input type="text" name="firstname" id="firstname">
+            <h2>Lastname</h2>
+            <input type="text" name="lastname" id="lastname"><br><br>
+            <input type="submit" value="Submit" style="background-color: #00ADB5; cursor: pointer;">
+        </form>
+    </div>
+    <!-- END of form -->
+    <hr style="color:white; width: 80%; margin: 0 auto;">
+    <!-- START Google Maps -->
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8664.207206207191!2d-122.40239690924352!3d37.789563847652495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1670498088786!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- END Google Maps -->
+    <!-- START of footer -->
+    <div class="footer">
+        <p>Copyright © ProLang</p>
+    </div>
+    <!-- END of footer -->
+</body>
+</html>

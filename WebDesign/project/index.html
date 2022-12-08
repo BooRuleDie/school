@@ -8,180 +8,20 @@
     <meta name="keywords" content="Programming, Language, Programming Language, Python, Javascript, Java, Golang, Rust, C++, C, C#, Kotlin, Flutter, Ruby, PHP">
     <meta name="author" content="Eren Burulday">
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    
+    <!-- CSS START -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/top-header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/page-content.css">
+    <!-- CSS END -->
+
+    <!-- JS START -->
+    <script src="./js/navbar-icon-redirect.js"></script>
+    <script src="./js/replica.js"></script>
+    <!-- JS END -->
+
     <title>ProLang | Home</title>
-
-    <style>
-        
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(34, 40, 49);
-        }
-        
-        /* START of navbar */
-        .navbar {
-            background-color: #00ADB5;
-            height: 68px;
-            font-weight: bold;
-            font-size: 10px;
-            padding-left: 10px;
-            padding-top: 10px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .navbar-element {
-            border-radius: 10px;
-            height: 30px;
-            float:left;
-            margin-right: 15px;
-            padding: 13px;
-            background-color: #EEEEEE;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .navbar-element:hover {
-            color: #00ADB5;
-            transform: scale(1.1);
-            transition: 0.4s;
-            cursor: pointer;
-        }
-
-        .navbar img {
-            width: 30px;
-            position: absolute;
-            /* this is how you can middle a absolute element */
-            left: 0;
-            right: 0;
-            top: 5px;
-            margin: 0 auto;
-        }
-
-        ul {
-            margin-top: 10px;
-            list-style-type: none;
-        }
-
-        ul li {
-            padding: 3px;
-            text-align: center;
-        }
-
-        .navbar p {
-            padding-top: 28px;
-        }
-
-        .languages:hover {
-            height: 150px;
-            transition: 0.5s;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        a:link {
-           /* Unvisited */
-           color: rgb(34, 40, 49)
-        }
-        a:visited {
-           /* Visited */
-           color: rgb(34, 40, 49)
-        }
-        a:hover{
-           /* Hover */
-           color:#00ADB5;
-        }
-
-        /* END of navbar */
-        /* START of top-header */
-        .top-header {
-            height: 50px;
-            background-color: #393E46;
-            padding: 30px;
-        }
-
-        .top-header h1 {
-           text-align: center;
-           color: #EEEEEE;
-        }
-        
-        .italic-fade {
-            color: rgb(87, 87, 87);
-            font-size: 16px;
-            font-style: italic;
-            display: inline-block;
-            width: 0px;
-            overflow: hidden;
-        }
-
-        #pro {
-            color: rgb(51, 112, 162);
-            text-shadow: 0px 0px 16px rgba(51,112,162,0.7);
-        }
-
-        #lang {
-            color: rgb(246, 210, 73);
-            text-shadow: 0px 0px 16px rgba(246,210,73,0.6);
-        }
-        /* END of Heading */
-        /* START of page-content */
-        .page-content div {
-            margin-top: 40px;
-            height: 200px;
-            width: 75%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(57, 62, 70);
-            border-radius: 10px;
-            padding: 15px;
-        }
-
-        .page-content p {
-            font-size: 17px;
-            font-weight: bold;
-            margin-top: 20px;
-            color:whitesmoke;
-        }
-
-        .page-content img.one, img.three {
-            float: right;
-            width: 250px;
-            border-radius: 10px;
-            margin-right:10px;
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-
-        .page-content img.two {
-            float: left;
-            width: 250px;
-            border-radius: 10px;
-            margin-right:20px;
-            margin-left: 10px;
-        }
-
-        .page-content h1 {
-            color:#00ADB5;
-            margin-left: 10%;
-            font-size: 25px;
-        }
-        /* END of page-content  */
-        /* START of footer */
-        .footer {
-            background-color: rgb(238, 238, 238);
-            text-align: center;
-            padding: 20px;
-        }
-        /* END of footer */
-    </style>
 </head>
 <body>
     <!-- START of navbar -->
@@ -215,9 +55,9 @@
                 <img src="./img/youtube.png" alt="home">
                 <p>YouTube</p>
             </div>
-            <div class="navbar-element" onclick="redirect('/coffee.html')">
-                <img src="./img/coffee.png" alt="home">
-                <p>Buy Me a Coffee</p>
+            <div class="navbar-element" onclick="replica()">
+                <img src="./img/replica.png" alt="home">
+                <p>Replicas</p>
             </div>
             <div class="navbar-element" onclick="redirect('/tutorials.html')">
                 <img src="./img/tutorials.png" alt="home">
@@ -256,6 +96,7 @@
     </div>
     <!-- END of footer -->
 
+    <!-- Animation of ProLang -->
     <script>
         const pro = document.getElementById("pro");
         const lang = document.getElementById("lang");
@@ -288,11 +129,6 @@
             italicFades[0].style.cssText = "width: 0px; transition: 1s;"
             italicFades[1].style.cssText = "width: 0px; transition: 1s;"
         }); 
-        }
-
-        /* navbar icon redirect */
-        const redirect = (url) => {
-            window.location.href = url;
         }
     </script>
 </body>
